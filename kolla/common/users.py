@@ -345,5 +345,13 @@ USERS = {
     'hsmusers-user': {
         'uid': 42493,  # This is not used, but the group ID is required.
         'gid': 42493,
+    },
+    'frr-user': {
+        'uid': 42494,
+        'gid': 42494,
+    },
+    'ovn-bgp-agent-user': {
+        'uid': 42495,
+        'gid': 42495,
     }
 }

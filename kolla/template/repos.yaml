@@ -7,6 +7,8 @@ centos:
   erlang: "rabbitmq_rabbitmq-erlang"
   extras: "extras"
   fluentd: "fluent-package-lts"
+  frr: "frr"
+  frr-extras: "frr-extras"
   grafana: "grafana"
   hacluster: "highavailability"
   influxdb: "influxdb"
@@ -26,6 +28,8 @@ centos-aarch64:
   erlang: "copr-rabbitmq-erlang"
   extras: "extras"
   fluentd: "fluent-package-lts"
+  frr: "frr"
+  frr-extras: "frr-extras"
   grafana: "grafana"
   hacluster: "highavailability"
   influxdb: "influxdb"
@@ -61,6 +65,11 @@ debian:
     suite: "bookworm"
     component: "contrib"
     gpg_key: "treasuredata.asc"
+  frr:
+    url: "https://deb.frrouting.org/frr"
+    suite: "bullseye"
+    component: "frr-9"
+    gpg_key: "frr.asc"
   grafana:
     url: "https://apt.grafana.com"
     suite: "stable"
@@ -118,6 +127,11 @@ debian-aarch64:
     suite: "bookworm"
     component: "contrib"
     gpg_key: "treasuredata.asc"
+  frr:
+    url: "https://deb.frrouting.org/frr"
+    suite: "bullseye"
+    component: "frr-9"
+    gpg_key: "frr.asc"
   grafana:
     url: "https://apt.grafana.com"
     suite: "stable"
@@ -165,6 +179,8 @@ rocky:
   erlang: "rabbitmq_rabbitmq-erlang"
   extras: "extras"
   fluentd: "fluent-package-lts"
+  frr: "frr"
+  frr-extras: "frr-extras"
   grafana: "grafana"
   hacluster: "highavailability"
   influxdb: "influxdb"
@@ -184,6 +200,8 @@ rocky-aarch64:
   erlang: "copr-rabbitmq-erlang"
   extras: "extras"
   fluentd: "fluent-package-lts"
+  frr: "frr"
+  frr-extras: "frr-extras"
   grafana: "grafana"
   influxdb: "influxdb"
   hacluster: "highavailability"
@@ -216,6 +234,11 @@ ubuntu:
     suite: "noble"
     component: "contrib"
     gpg_key: "treasuredata.asc"
+  frr:
+    url: "https://deb.frrouting.org/frr"
+    suite: "noble"
+    component: "frr-9"
+    gpg_key: "frr.asc"
   grafana:
     url: "https://apt.grafana.com"
     suite: "stable"
@@ -274,6 +297,11 @@ ubuntu-aarch64:
     suite: "noble"
     component: "contrib"
     gpg_key: "treasuredata.asc"
+  frr:
+    url: "https://deb.frrouting.org/frr"
+    suite: "noble"
+    component: "frr-9"
+    gpg_key: "frr.asc"
   grafana:
     url: "https://apt.grafana.com"
     suite: "stable"

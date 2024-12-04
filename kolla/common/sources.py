@@ -269,6 +269,10 @@ SOURCES = {
         'type': 'url',
         'location': ('$tarballs_base/openstack/ovn-octavia-provider/'
                      'ovn-octavia-provider-${openstack_branch}.tar.gz')},
+    'ovn-bgp-agent': {
+        'type': 'url',
+        'location': ('$tarballs_base/openstack/ovn-bgp-agent/'
+                     'ovn-bgp-agent-${openstack_branch}.tar.gz')},
     'placement-base': {
         'type': 'url',
         'location': ('$tarballs_base/openstack/placement/'

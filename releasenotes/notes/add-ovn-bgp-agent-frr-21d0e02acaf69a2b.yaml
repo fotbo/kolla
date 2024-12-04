@@ -1,0 +1,4 @@
+---
+features:
+  - |
+    Adds FRR and ovn-bgp-agent container images to kolla
