@@ -101,6 +101,15 @@ RUN rm -f /etc/libvirt/qemu/networks/default.xml /etc/libvirt/qemu/networks/auto
 {% endif %}
 
 COPY extend_start.sh /usr/local/bin/kolla_extend_start
+RUN if [ -x /usr/sbin/tc ] && [ ! -x /usr/sbin/tc_bin ]; then \
+        mv /usr/sbin/tc /usr/sbin/tc_bin && \
+        printf '%s\n' \
+          '#!/bin/bash' \
+          'sleep 0.3' \
+          'exec /usr/sbin/tc_bin "$@"' \
+          > /usr/sbin/tc && \
+        chmod 0755 /usr/sbin/tc ; \
+    fi
 RUN chmod 644 /usr/local/bin/kolla_extend_start
 
 {{ macros.kolla_patch_sources() }}
